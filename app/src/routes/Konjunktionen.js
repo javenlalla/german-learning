@@ -1,6 +1,7 @@
 import React from 'react';
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
+import SubSection from "../features/layout/SubSection";
 
 const examples = {
   weil: [
@@ -49,6 +50,9 @@ const examples = {
     <>Er geht spazieren, <span className="badge bg-secondary">obwohl</span> es <span
       className="badge bg-info">regnent</span>.</>,
   ],
+  wenn: [
+    <>Wir gehen ins Kino, <span className="badge bg-secondary">wenn</span> du Lust <span className="badge bg-info">hast</span>.</>,
+  ],
   deshalb: [
     <> Meine Frau ist krank, <span className="badge bg-secondary">deshalb</span> <span
       className="badge bg-info">musste</span> ich zu ihr nach Hause.</>,
@@ -92,6 +96,10 @@ const Konjunktionen = () => {
     return <p key={i}>{example}</p>
   });
 
+  const wennRender = examples.wenn.map((example, i) => {
+    return <p key={i}>{example}</p>
+  });
+
   const deshalbRender = examples.deshalb.map((example, i) => {
     return <p key={i}>{example}</p>
   });
@@ -104,33 +112,32 @@ const Konjunktionen = () => {
       <TopicHeader header="Weil, Deshalb, Trotzdem, Ob, Dass, Obwohl"/>
 
       <Section>
+        <SubSection header="Nebensatz">
+          <h3>Weil</h3>
+          {weilRender}
 
-        <h2>Nebensatz</h2>
-        <h3>Weil, Ob, Dass, Obwohl</h3>
+          <h3>Dass</h3>
+          {dassRender}
 
-        <h4>Weil</h4>
-        {weilRender}
+          <h3>Ob</h3>
+          {obRender}
 
-        <h4>Dass</h4>
-        {dassRender}
+          <h3>Obwohl</h3>
+          {obwohlRender}
 
-        <h4>Ob</h4>
-        {obRender}
-
-        <h4>Obwohl</h4>
-        {obwohlRender}
+          <h3>Wenn</h3>
+          {wennRender}
+        </SubSection>
 
         <hr/>
 
-        <h2>Halbsatz</h2>
-        <h3>Deshalb, Trotzdem</h3>
+        <SubSection header="Halbsatz">
+          <h3>Deshalb</h3>
+          {deshalbRender}
 
-        <h4>Deshalb</h4>
-        {deshalbRender}
-
-        <h4>Trotzdem</h4>
-        {trotzdemRender}
-
+          <h3>Trotzdem</h3>
+          {trotzdemRender}
+        </SubSection>
       </Section>
     </>
   )
