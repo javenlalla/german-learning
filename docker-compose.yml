@@ -1,0 +1,29 @@
+version: "3.9"
+
+services:
+  react-redux:
+    container_name: react-redux
+    image: react-redux:testing
+    environment:
+      - NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true # Force file-polling to enable hot reloading when running container on Windows.
+    volumes:
+      - ./app:/app
+      - /app/node_modules
+    working_dir: /app
+    ports:
+      - 3000:3000
+
+  # react-redux-storybook:
+  #   container_name: react-redux-storybook
+  #   image: react-redux:testing
+  #   command: yarn storybook
+  #   environment:
+  #     - NODE_ENV=development
+  #     - CHOKIDAR_USEPOLLING=true # Force file-polling to enable hot reloading when running container on Windows.
+  #   volumes:
+  #     - ./app:/app
+  #     - /app/node_modules
+  #   working_dir: /app
+  #   ports:
+  #     - 6006:6006
