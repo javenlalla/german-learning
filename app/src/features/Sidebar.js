@@ -13,6 +13,7 @@ const prufungRoutes = [
 const grammarRoutes = [
   {path:'/konjunktiv-ii', linkText: 'Konjunktiv II (Wünsche)'},
   {path:'/konjunktionen', linkText: 'Weil, Deshalb, Trotzdem, Ob, Dass, Obwohl'},
+  {path:'/als', linkText: 'Als'},
   {path:'/wohin-wo-woher', linkText: 'Wohin, Wo, Woher'},
   {path:'/indirekt-fragen', linkText: 'Indirekt Fragen Und Ob'},
 ];

@@ -23,6 +23,7 @@ import Bildbeschreibung from "./routes/Bildbeschreibung";
 import Lassen from "./routes/Lassen";
 import IndirektFragen from "./routes/IndirektFragen";
 import ModalVerben from "./routes/ModalVerben";
+import Als from "./routes/Als";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -44,6 +45,7 @@ ReactDOM.render(
             <Route path="brief-schreiben" element={<BriefSchreiben/>}/>
             <Route path="bildbeschreibung" element={<Bildbeschreibung/>}/>
             <Route path="modalverben" element={<ModalVerben/>}/>
+            <Route path="als" element={<Als/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
