@@ -4,7 +4,8 @@
 
 ```bash
 docker build -f=Dockerfile.production --tag=german-learning:production --no-cache .
-docker run -it --rm -v //${PWD}/tmp://build german-learning:production bash -c "ls -l /app/build"
+# docker run -it --rm -v //${PWD}/tmp://build german-learning:production bash -c "ls -l /app/build"
+docker run -it --rm -v ${PWD}/prod-build:/build german-learning:production  bash -c "cp -R /app/build/* /build"
 ```
 
 ## Commands
