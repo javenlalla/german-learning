@@ -1,5 +1,12 @@
 # Create React App With Redux Testing App
 
+## Deployment
+
+```bash
+docker build -f=Dockerfile.production --tag=german-learning:production --no-cache .
+docker run -it --rm -v //${PWD}/tmp://build german-learning:production bash -c "ls -l /app/build"
+```
+
 ## Commands
 
 ### Build Docker Image
