@@ -8,24 +8,11 @@ const Als = () => {
       <TopicHeader header="Als"/>
 
       <Section>
-
-        <h2>Als Sub-section</h2>
-
-        <div className="table-responsive text-nowrap">
-          <table className="table">
-            <thead>
-            <tr>
-              <th>Header</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Value</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-
+        <p>Als ich 7 Jahre alt war, war ich in der Schule.</p>
+        <p>Als ich nach Deutschland gekommen bin, war ich 33 Jahre alt.</p>
+        <p>Als ich geheiratet, war ich 19 Jahre alt.</p>
+        <p>Ich war Kellner, als ich in Ungarn gelebt habe.</p>
+        <p>Ich bin zum 1. Mal Ski gefahren, als ich 3 Jahre alt war.</p>
       </Section>
     </>
   )

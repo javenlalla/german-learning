@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
+import SubSection from "../features/layout/SubSection";
 
 const Sample = () => {
   return (<>
@@ -9,22 +10,22 @@ const Sample = () => {
 
       <Section>
 
-        <h2>Sample Sub-section</h2>
-
-        <div className="table-responsive text-nowrap">
-          <table className="table">
-            <thead>
-            <tr>
-              <th>Header</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Value</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
+        <SubSection header="Sample Sub-section">
+          <div className="table-responsive text-nowrap">
+            <table className="table">
+              <thead>
+              <tr>
+                <th>Header</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>Value</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </SubSection>
 
       </Section>
     </>
