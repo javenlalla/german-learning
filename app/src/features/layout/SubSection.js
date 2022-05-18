@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const SubSection = (props) => {
   return (
     <>
-      <h2 className="my-4">{props.header}</h2>
+      <h2 id={props.linkAnchor} className="my-4">{props.header}</h2>
       <div>
         {props.children}
       </div>
@@ -14,6 +14,11 @@ const SubSection = (props) => {
 
 SubSection.propTypes = {
   header: PropTypes.string.isRequired,
+  linkAnchor: PropTypes.string,
+}
+
+SubSection.defaultProps = {
+  linkAnchor: '',
 }
 
 export default SubSection;
