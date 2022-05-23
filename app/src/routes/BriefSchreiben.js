@@ -96,6 +96,33 @@ const letters = [
     closingName: 'Vorname Nachname',
     content: 'ich schreibe Ihnen heute, weil ich im Internet Ihre Stellenanzeige gelesen habe und ich mich für die Arbeit als Bürokauffrau interessiere. Mein Name ist Laura Nowak, ich bin 30 Jahre alt und komme aus Russland.<br/><br/>Nach dem Abitur habe ich eine Ausbildung als Bürokauffrau gemacht. In den letzten 2 Jahren habe ich bei der Firma Siemens gearbeitet. Ich habe eine selbstständige Arbeitsweise und ich bin organisiert und flexibel. Meine Mutter sprache ist Russisch. Ich spreche sehr gut Deutsch, auch gut Englisch und ein bisschen Spanisch. Ich habe sehr gute Kenntnisse in Microsoft Office.<br/><br/>Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen. Am besten erreichen Sie mich unter folgender Telefonnummer: 0174 123-5498.',
   },
+  {
+    type: 'Bewerbung',
+    title: 'Altenpfleger',
+    subject: 'Altenpfleger',
+    greeting: 'Sehr geehrte Damen und Herren',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'mit großem Interesse habe ich Ihre Anzeige gelesen und möchte mich um die freie Stelle als Altenpfleger bewerben. Ich heiße Vorname Nachname und bin 30 Jahre alt. Ich komme aus Ungarn und seit 3 Jahren lebe ich in Deutschland.<br/><br/>Wie Sie aus meinen Unterlagen ersehen können, habe ich nach dem Schulabschluss in meinem Heimatland 5 Jahre in einem Altenheim als Altenpfleger gearbeitet. Ich habe in Deutschland 2 Monate Praktikum im Pflegedienst gemacht.<br/><br/>Meine Muttersprache ist Ungarisch aber ich spreche auch gut Rumänisch und ich haben einen Deutsch-Integrationskurs gemacht. Ich habe auch Computer-Kurs in Ungarn gemacht und ich beherrsche die üblichen PC-Programme.<br/><br/>Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen. Ich bin unter der Handynummer erreichbar: 0174-123-4567.',
+  },
+  {
+    type: 'Bewerbung',
+    title: 'Verkäuferin',
+    subject: 'Verkäuferin',
+    greeting: 'Sehr geehrte Damen und Herren',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'mit großem Interesse habe ich Ihre Anzeige im Internet gelesen und möchte mich um die freie Stelle als Verkäuferin bei Muller bewerben. Ich heiße Vorname Nachname. Ich bin 25 Jahre alt und komme aus der Türkei.<br/><br/>Wie Sie aus meinen Unterlagen ersehen können, habe ich nach meinem Realschulabschluss ein 6-monatiges Praktikum bei DM gemacht. Danach habe ich 1 Jahr bei Rewe gearbeitet.<br/><br/>Ich bin freundlich und hilfsbereit. Ich habe eine selbstständige Arbeitsweise und bin sehr gut in Mathematik. Meine Muttersprache ist Türkisch. Ich spreche fließend Deutsch und ein bisschen Englisch. Sie können mich unter der E-Mail-Adresse meine@email.com erreichen.<br/><br/>Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen.',
+  },
+  {
+    type: 'Bewerbung',
+    title: 'Kfz-Mechaniker',
+    subject: 'Kfz-Mechaniker',
+    greeting: 'Sehr geehrte Damen und Herren',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'mit großem Interesse habe ich Ihre Stellenanzeige im Internet gelesen und möchte mich um die Stelle in Ihrer Firma als Kfz-Mechaniker bewerben. Ich heiße Vorname Nachname. Ich bin 30 Jahre alt und komme aus Bulgarien. Ich bin Kfz-Mechaniker von Beruf.<br/><br/>Wie Sie aus meinen Unterlagen ersehen können, habe ich in meinem Heimatland Bulgarien nach meinem Realschulabschluss eine Ausbildung zum Kfz-Mechaniker gemacht und dort auch 2 Jahre in einer Werkstatt in Sofia gearbeitet. Als ich ein Kind war, habe ich Autos geliebt. Außerdem habe ich viele Erfahrungen in der Montage und ich bin flexibel für Arbeitsreisen.<br/><br/>Meine Muttersprache ist Bulgarisch und ich spreche noch gut Deutsch und Englisch. Leider habe ich keine Computerkenntnisse.<br/><br/>Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen. Am besten erreichen Sie mich unter folgenden Telefonnummer: 0174 123-4567.',
+  },
 ];
 
 const BriefSchreiben = () => {
