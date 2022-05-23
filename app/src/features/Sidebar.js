@@ -16,7 +16,7 @@ const grammarRoutes = [
   {path:'/passiv', linkText: 'Passiv'},
   {path:'/als', linkText: 'Als'},
   {path:'/wohin-wo-woher', linkText: 'Wohin, Wo, Woher'},
-  {path:'/indirekt-fragen', linkText: 'Indirekt Fragen Und Ob'},
+  // {path:'/indirekt-fragen', linkText: 'Indirekt Fragen Und Ob'},
 ];
 
 const verbRoutes = [
@@ -73,8 +73,8 @@ const Sidebar = () => {
           <li className="sidebar-title"><h4><i className="bi bi-journal-richtext align-middle"/><span className="mx-2">Grammatik</span></h4></li>
           {grammarRoutesRender}
 
-          <li className="sidebar-title"><h4><i className="bi bi-journal-text align-middle"/><span className="mx-2">Verben</span></h4></li>
-          {verbRoutesRender}
+          {/*<li className="sidebar-title"><h4><i className="bi bi-journal-text align-middle"/><span className="mx-2">Verben</span></h4></li>*/}
+          {/*{verbRoutesRender}*/}
 
           {/*<SidebarLink currentRoute={currentRoute} destinationLink='/' linkText='Dashboard' />*/}
           {/*<SidebarLink currentRoute={currentRoute} destinationLink='/deklination' linkText='Deklination' />*/}
