@@ -4,7 +4,7 @@ import SubSection from "../layout/SubSection";
 
 const HilfreicheSatze = () => {
   return (
-    <SubSection header="Hilfreiche Sätze">
+    <SubSection header="Hilfreiche Sätze" linkAnchor="hilfsatze">
       <table className="table">
         <tbody>
         <tr>
@@ -100,6 +100,47 @@ const HilfreicheSatze = () => {
         <tr>
           <td>
             Ich freue mich auf [Samstag].
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Sie können mich unter der E-Mail-Adresse meine@email.com erreichen.
+            <br/>
+            Am besten erreichen Sie mich unter folgenden Telefonnummer: [0174 123-4567].
+            <br/>
+            Sie können mich unter der E-Mail-Adresse [meine@email.com] erreichen.
+            <br/>
+            Ich bin unter der Handynummer erreichbar: [0174-123-4567].
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-info">Reklamation</span> Wenn ich bis zum 12.06 nicht von Ihnen höre, dann nehme ich die Bestellung zurück und ich möchte mein Geld zurückhaben.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-info">Reklamation</span> Ich möchte Sie zum letzten Mal auffordern, mit bis [...] (z.B: 12.06) einen Ersatz zu schicken.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-info">Reklamation</span> Über eine schnelle Bearbeitung würde ich mich sehr freuen.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-warning">Bewerbung</span> ...mit großem Interesse habe ich Ihre Anzeige [im Internet] gelesen und möchte mich um die freie Stelle als [Altenpfleger] bewerben.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-warning">Bewerbung</span> Wie Sie aus meinen Unterlagen ersehen können,...
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-warning">Bewerbung</span> Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen.
           </td>
         </tr>
         </tbody>
