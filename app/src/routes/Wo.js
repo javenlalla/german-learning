@@ -105,12 +105,12 @@ const Wo = () => {
                   <td>Ein Kind läuft <Case type="dat">von der</Case> <Gender type="die">Mutter</Gender>.</td>
                 </tr>
                 <tr>
-                  <td>Eine Frau geht <Case type="akk">in das</Case> <Gender type="das">Auto</Gender>.</td>
+                  <td>Eine Frau geht <Case type="akk">in das (ins)</Case> <Gender type="das">Auto</Gender>.</td>
                   <td>Eine Frau sitzt <Case type="dat">im</Case> <Gender type="das">Auto</Gender>.</td>
-                  <td>Eine Frau geht <Case type="dat">aus dem</Case> <Gender type="das">Auto</Gender>.</td>
+                  <td>Eine Frau steigt <Case type="dat">aus dem</Case> <Gender type="das">Auto</Gender>.</td>
                 </tr>
                 <tr>
-                  <td>Zwei Vögel fliegen <Case type="dat">zum</Case> <Gender type="plural">Baum</Gender>.</td>
+                  <td>Zwei Vögel fliegen <Case type="dat">auf den</Case> <Gender type="plural">Baum</Gender>.</td>
                   <td>Zwei Vögel sitzen <Case type="dat">auf dem</Case> <Gender type="plural">Baum</Gender>.</td>
                   <td>Zwei Vögel fliegen <Case type="dat">vom</Case> <Gender type="plural">Baum</Gender>.</td>
                 </tr>

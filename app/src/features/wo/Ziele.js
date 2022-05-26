@@ -3,77 +3,25 @@ import Card from "../layout/Card";
 import Gender from "../text/Gender";
 
 const Ziele = () => {
-  const ziele = [
-    {
-      preposition: <span className="text-primary">nach -> im -> aus</span>,
-      values: [
-        "Spanien",
-        "Serbien",
-        "Paris",
-        "Köln",
-        "München",
-        "Italien",
-      ]
-    },
-    {
-      preposition: <span className="text-success">in -> -></span>,
-      values: [
-        "in den Berge",
-        "in die Stadt",
-        "ins Gebirge",
-        "in die Schweiz",
-        "in die Türkei",
-        "in die USA",
-        "in die Wüste",
-        "in den Wald",
-        "in den Dschungel",
-        "in den Süden/Norden/Osten/Westen",
-        "in den Dschungel",
-        "in das Hotel",
-      ]
-    },
-    {
-      preposition: <span className="text-info">an -> am -></span>,
-      values: [
-        "an den Bodensee",
-        "an die Mosel",
-        "an die Ostsee",
-        "ans Meer",
-        "an den Atlantik/Pazifik",
-        "an den Strand",
-        "an die Küste",
-        "an den Fluss",
-      ]
-    },
-    {
-      preposition: <span className="text-danger">auf -> -></span>,
-      values: [
-        "auf die Insel",
-        "auf die Zugspitze",
-        "aufs Land",
-      ]
-    },
-  ]
-
   const destinations = [
     {
       wohin: <span>nach <Gender type="das">Spanien</Gender></span>,
-      wo: <span>im <Gender type="das">Spanien</Gender></span>,
+      wo: <span>in <Gender type="das">Spanien</Gender></span>,
       woher: <span>aus <Gender type="das">Spanien</Gender></span>,
     },
     {
       wohin: <span>nach <Gender type="das">Paris</Gender></span>,
-      wo: <span>im <Gender type="das">Paris</Gender></span>,
+      wo: <span>in <Gender type="das">Paris</Gender></span>,
       woher: <span>aus <Gender type="das">Paris</Gender></span>,
     },
     {
       wohin: <span>nach <Gender type="das">Köln</Gender></span>,
-      wo: <span>im <Gender type="das">Köln</Gender></span>,
+      wo: <span>in <Gender type="das">Köln</Gender></span>,
       woher: <span>aus <Gender type="das">Köln</Gender></span>,
     },
     {
       wohin: <span>nach <Gender type="das">Italien</Gender></span>,
-      wo: <span>im <Gender type="das">Italien</Gender></span>,
+      wo: <span>in <Gender type="das">Italien</Gender></span>,
       woher: <span>aus <Gender type="das">Italien</Gender></span>,
     },
     {
@@ -93,8 +41,8 @@ const Ziele = () => {
     },
     {
       wohin: <span>in die <Gender type="die">Schweiz</Gender></span>,
-      wo: <span>in den <Gender type="die">Schweiz</Gender></span>,
-      woher: <span>aus den <Gender type="die">Schweiz</Gender></span>,
+      wo: <span>in der <Gender type="die">Schweiz</Gender></span>,
+      woher: <span>aus der <Gender type="die">Schweiz</Gender></span>,
     },
     {
       wohin: <span>in die <Gender type="die">Türkei</Gender></span>,
@@ -144,22 +92,22 @@ const Ziele = () => {
     {
       wohin: <span>an die <Gender type="die">Mosel</Gender></span>,
       wo: <span>an der <Gender type="die">Mosel</Gender></span>,
-      woher: <span>aus der <Gender type="die">Mosel</Gender></span>,
+      woher: <span>von der <Gender type="die">Mosel</Gender></span>,
     },
     {
       wohin: <span>an die <Gender type="die">Ostsee</Gender></span>,
       wo: <span>an der <Gender type="die">Ostsee</Gender></span>,
-      woher: <span>aus der <Gender type="die">Ostsee</Gender></span>,
+      woher: <span>von der <Gender type="die">Ostsee</Gender></span>,
     },
     {
       wohin: <span>ans <Gender type="das">Meer</Gender></span>,
       wo: <span>im/am <Gender type="das">Meer</Gender></span>,
-      woher: <span>aus dem <Gender type="das">Meer</Gender></span>,
+      woher: <span>von/aus dem <Gender type="das">Meer</Gender></span>,
     },
     {
       wohin: <span>an der <Gender type="der">See</Gender></span>,
       wo: <span>im/am <Gender type="der">See</Gender></span>,
-      woher: <span>aus dem <Gender type="der">See</Gender></span>,
+      woher: <span>von/aus dem <Gender type="der">See</Gender></span>,
     },
     {
       wohin: <span>an den <Gender type="der">Strand</Gender></span>,
@@ -232,34 +180,11 @@ const Ziele = () => {
     </tr>
   })
 
-  const zieleRender = ziele.map((ziel, i) => {
-    const values = ziel.values.map((value, j) => {
-      return <li key={`${i}-${j}`}>{value}</li>
-    })
-
-    return <tr key={i}>
-      <td>{ziel.preposition}</td>
-      <td>
-        <ul>
-          {values}
-        </ul>
-      </td>
-    </tr>
-  })
-
   return (
     <section className="section">
       <div className="row">
         <div>
           <Card cardTitle="Reiseziele">
-
-            {/*<div className="table-responsive text-nowrap">*/}
-            {/*  <table className="table">*/}
-            {/*    <tbody>*/}
-            {/*    {zieleRender}*/}
-            {/*    </tbody>*/}
-            {/*  </table>*/}
-            {/*</div>*/}
 
             <div className="table-responsive text-nowrap">
               <table className="table">
