@@ -23,6 +23,22 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
+            Ich möchte dich/Sie gern einladen.
+            <br/>
+            Ich möchte dich/Sie gern [zu meinen Fest/zu meiner Party] einladen.
+            <br/>
+            Ich möchte dich/Sie gern [zum Kuchen essen] einladen.
+            <br/>
+            Ich möchte dich/Sie gern [zum Kuchen essen] einladen [bei mir zu Hause].
+            <br/>
+            Ich möchte dich/Sie gern [zum Kuchen essen] einladen [bei mir zu Hause] [am Freitag um 18:00 Uhr].
+          </td>
+        </tr>
+        <tr>
+          <td>Ich möchte mich bei dir/Ihnen entschuldigen für meine Party/mein Fest.</td>
+        </tr>
+        <tr>
+          <td>
             Ich habe eine Frage.
             <br/>
             Ich hätte eine Frage.
