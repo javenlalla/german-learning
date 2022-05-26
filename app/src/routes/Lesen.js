@@ -1,39 +1,33 @@
 import React from 'react';
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
+import SubSection from "../features/layout/SubSection";
 
 const Lesen = () => {
   return (<>
       <TopicHeader header="Lesen"/>
 
       <Section>
-
-        <h2>Lesen Sub-section</h2>
-
-        Lesen Teil 2
-        mal mal Breite x Höhe x Trefe
-        Aufgabe genau lesen!
-        ↳ Eine Situation hat keine Lösung! xit im Telcblatt x armalen
-        •Situationen zuerst alle genau durchlesen.
-        wichtige Worter markieren
-        Anzeigen genau durchlesen + passende Anzeige finden!
-        il manor ich.
-
-        <div className="table-responsive text-nowrap">
-          <table className="table">
-            <thead>
-            <tr>
-              <th>Header</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-              <td>Value</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-
+        <SubSection header="Tipps">
+          <div>
+            <ul>
+              <li>Aufgabe genau lesen</li>
+              <li>Situationen zuerst alle genau durchlesen</li>
+              <li>Wichtige Wörter markieren</li>
+              <li>
+                Lesen Teil 2:
+                <ul>
+                  <li>Anzeigen genau durchlesen und passende Anzeige finden</li>
+                  <li>Eine Situation hat keine Lösung
+                    <ul>
+                      <li>Malen <span className="fw-bold">X</span></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </SubSection>
       </Section>
     </>
   )

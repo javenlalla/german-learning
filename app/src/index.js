@@ -25,6 +25,7 @@ import IndirektFragen from "./routes/IndirektFragen";
 import ModalVerben from "./routes/ModalVerben";
 import Als from "./routes/Als";
 import Passiv from "./routes/Passiv";
+import Lesen from "./routes/Lesen";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -48,6 +49,7 @@ ReactDOM.render(
             <Route path="modalverben" element={<ModalVerben/>}/>
             <Route path="als" element={<Als/>}/>
             <Route path="passiv" element={<Passiv/>}/>
+            <Route path="lesen" element={<Lesen/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
