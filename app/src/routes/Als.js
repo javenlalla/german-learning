@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
 

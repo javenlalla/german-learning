@@ -114,6 +114,8 @@ export const selectWords = createSelector(
         if (word.tags[0] === tags[0]) {
           return word;
         }
+
+        return null;
       })
     }
 

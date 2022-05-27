@@ -145,9 +145,11 @@ const Vokabular = () => {
         for (let i = 0; i < filterTags.length; i++) {
 
           if (word.tags.includes(filterTags[i])) {
-            return word;
+            return true;
           }
         }
+
+        return false;
       })
     }
 

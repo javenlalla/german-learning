@@ -7,15 +7,6 @@ import HilfreicheSatze from "../features/briefSchreiben/HilfreicheSatze";
 import TableOfContents from "../features/layout/TableOfContents";
 
 const letters = [
-  // {
-  //   type: '',
-  //   title: '',
-  //   subject: '',
-  //   greeting: '',
-  //   closing: '',
-  //   closingName: '',
-  //   content: '',
-  // },
   {
     type: 'Krankmelden',
     title: 'Formell | Krankmelden',
@@ -155,8 +146,10 @@ const BriefSchreiben = () => {
 
       updatedFilteredLetters = letters.filter(letter => {
         if (letter.type === selectedType) {
-          return letter;
+          return true;
         }
+
+        return false;
       })
     }
 
@@ -188,6 +181,9 @@ const BriefSchreiben = () => {
 
       case 'Beschwerde':
         badgeStyle = 'bg-danger';
+        break;
+
+      default:
         break;
     }
 

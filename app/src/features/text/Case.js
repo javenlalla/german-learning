@@ -20,6 +20,9 @@ const Case = (props) => {
     case 'gen':
       styleClass = 'bg-danger';
       break;
+
+    default:
+      break;
   }
 
   return (

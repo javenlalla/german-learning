@@ -1,9 +1,6 @@
 import React from 'react';
-import Wochenende from "../features/vokabular/Wochenende";
-import Auto from "../features/vokabular/Auto";
 import Case from "../features/text/Case";
 import Gender from "../features/text/Gender";
-import Card from "../features/layout/Card";
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
 

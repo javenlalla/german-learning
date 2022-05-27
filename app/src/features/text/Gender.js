@@ -20,6 +20,9 @@ const Gender = (props) => {
     case 'plural':
       styleClass = 'text-info';
       break;
+
+    default:
+      break;
   }
 
   return (

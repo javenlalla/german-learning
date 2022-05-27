@@ -1,7 +1,4 @@
 import React from 'react';
-import Case from "../features/text/Case";
-import Gender from "../features/text/Gender";
-import Card from "../features/layout/Card";
 import TopicHeader from "../features/layout/TopicHeader";
 import Section from "../features/layout/Section";
 import SubSection from "../features/layout/SubSection";

@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react';
-import {Outlet, Link} from "react-router-dom";
-import Main from './features/Main';
+import { Outlet } from "react-router-dom";
 import Sidebar from './features/Sidebar';
 
 function App() {
@@ -18,7 +17,7 @@ function App() {
       <div id="main">
         <header className="mb-3">
           <a href="#" className="burger-btn d-block d-xl-none">
-            <i className="bi bi-justify fs-3"></i>
+            <i className="bi bi-justify fs-3"/>
           </a>
         </header>
         <Outlet/>
