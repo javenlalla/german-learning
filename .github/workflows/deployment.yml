@@ -23,9 +23,11 @@ jobs:
       - name: Copy folder content recursively to vps
         uses: garygrossgarten/github-action-scp@release
         with:
-          local: build
-          remote: ${{ secrets.DEPLOY_PATH }}
+          source: "build"
+          target: ${{ secrets.DEPLOY_PATH }}
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           privateKey: ${{ secrets.SSH_PRIVATE_KEY }}
+          # local: build
+          # remote: ${{ secrets.DEPLOY_PATH }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
