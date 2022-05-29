@@ -11,11 +11,11 @@ const prufungRoutes = [
 ];
 
 const grammarRoutes = [
-  {path:'/konjunktiv-ii', linkText: 'Konjunktiv II (Wünsche)'},
+  {path:'/wohin-wo-woher', linkText: 'Wohin, Wo, Woher'},
   {path:'/konjunktionen', linkText: 'Weil, Deshalb, Trotzdem, Ob, Dass, Obwohl'},
+  {path:'/konjunktiv-ii', linkText: 'Konjunktiv II (Wünsche)'},
   {path:'/passiv', linkText: 'Passiv'},
   {path:'/als', linkText: 'Als'},
-  {path:'/wohin-wo-woher', linkText: 'Wohin, Wo, Woher'},
   // {path:'/indirekt-fragen', linkText: 'Indirekt Fragen Und Ob'},
 ];
 
