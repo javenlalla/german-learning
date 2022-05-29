@@ -79,6 +79,8 @@ const HilfreicheSatze = () => {
           <td>
             Das freut mich sehr.<br/>
             Ich bin froh, dass...<br/>
+            Ich freue mich auf [Samstag].<br/>
+            Ich würde mich freuen, wenn...<br/>
           </td>
         </tr>
         <tr>
@@ -97,22 +99,12 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Ich freue mich auf [Samstag].
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Ich würde mich freuen, wenn...
-          </td>
-        </tr>
-        <tr>
-          <td>
             Ich möchte mich vorstellen.
           </td>
         </tr>
         <tr>
           <td>
-            Das Treffen würde am ..., um .. Uhr [bei mir zu House] stattfinden.
+            Das Treffen würde am [Samstag], um [16:00] Uhr [bei mir zu House] stattfinden.
           </td>
         </tr>
         <tr>
