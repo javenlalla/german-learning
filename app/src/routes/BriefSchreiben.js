@@ -8,13 +8,13 @@ import TableOfContents from "../features/layout/TableOfContents";
 
 const letters = [
   {
-    type: 'Krankmelden',
-    title: 'Formell | Krankmelden',
+    type: 'Entschuldigung',
+    title: 'Formell | Entschuldigung | Krankes Kind',
     subject: 'Entschuldigung',
     greeting: 'Sehr geehrte Frau Schneider',
     closing: 'Mit freundlichen Grüßen',
     closingName: 'Frau Wagner',
-    content: 'ich schreibe Ihnen, weil meine Tochter Krank ist. Leider kann sie deshalb nicht zur Schule kommen. Gestern waren wir beim Arzt. Der Arzt hat gesagt, dass sie eine Erkältung und Fieber hat und zu Hause bleiben soll. Ich weiß nicht, wann sie wieder in die Schule kommt. Wenn es ihr besser geht, kommt sie natürlich wieder in die Schule. Ich habe Ihnen die Krankmeldung schon geschickt. Ich würde gern trotzdem die Hausaufgaben mit ihr machen. Könnten Sie mir bitte die Hausaufgaben per E-mail schicken? Meine E-Mail Adresse ist krank@melden.com.<br/>Ich bedanke mich für Ihr Verständnis.',
+    content: 'ich schreibe Ihnen, weil meine Tochter Krank ist. Leider kann sie deshalb nicht zur Schule kommen. Gestern waren wir beim Arzt. Der Arzt hat gesagt, dass sie eine Erkältung und Fieber hat und zu Hause bleiben soll. Ich weiß nicht, wann sie wieder in die Schule kommt. Wenn es ihr besser geht, kommt sie natürlich wieder in die Schule. Ich habe Ihnen die Krankmeldung schon geschickt. Ich würde gern trotzdem die Hausaufgaben mit ihr machen. Könnten Sie mir bitte die Hausaufgaben per E-Mail schicken? Meine E-Mail-Adresse ist krank@melden.com.<br/>Ich bedanke mich für Ihr Verständnis.',
   },
   {
     type: 'Einladung',
@@ -35,9 +35,9 @@ const letters = [
     content: 'ich schreibe euch, weil ich am nächsten Dienstag an einer Besprechung teilnehmen soll. Leider muss ich aber den Chef auf einer Dienstreise begleiten, deshalb kann ich an der Besprechung nicht teilnehmen. Die Dienstreise dauert drei Tage, von Montag bis Mittwoch. Ich habe eine Frage. Wann ist der nächste Termin für die Besprechung? Damit ich wieder dabei bin. Ich möchte noch wissen, wer kann einen Bericht über die Besprechung schreiben? Ich würde mich freuen, wenn mir jemand den Bericht per E-Mail sendet. Ich möchte alle Informationen von der Besprechung. Vielen Dank für euer Verständnis. Ich freue mich auf eine Antwort.',
   },
   {
-    type: 'Krankmelden',
+    type: 'Entschuldigung',
     title: 'Formell | Lehrerin E-Mail',
-    subject: 'Krankmelden',
+    subject: 'Entschuldigung',
     greeting: 'Sehr geehrte / Liebe Frau Meier',
     closing: 'Mit freundlichen Grüßen',
     closingName: 'Herr/Frau Nachname',
@@ -134,6 +134,24 @@ const letters = [
     closingName: 'Vorname Nachname',
     content: 'mit großem Interesse habe ich Ihre Stellenanzeige im Internet gelesen und möchte mich um die Stelle in Ihrer Firma als Kfz-Mechaniker bewerben. Ich heiße Vorname Nachname. Ich bin 30 Jahre alt und komme aus Bulgarien. Ich bin Kfz-Mechaniker von Beruf.<br/><br/>Wie Sie aus meinen Unterlagen ersehen können, habe ich in meinem Heimatland Bulgarien nach meinem Realschulabschluss eine Ausbildung zum Kfz-Mechaniker gemacht und dort auch 2 Jahre in einer Werkstatt in Sofia gearbeitet. Als ich ein Kind war, habe ich Autos geliebt. Außerdem habe ich viele Erfahrungen in der Montage und ich bin flexibel für Arbeitsreisen.<br/><br/>Meine Muttersprache ist Bulgarisch und ich spreche noch gut Deutsch und Englisch. Leider habe ich keine Computerkenntnisse.<br/><br/>Über eine Einladung zu einem persönlichen Gespräch würde ich mich freuen. Am besten erreichen Sie mich unter folgenden Telefonnummer: 0174 123-4567.',
   },
+  {
+    type: 'Entschuldigung',
+    title: 'Halb-Formell | Entschuldigung | Kurs Kommen Nicht',
+    subject: 'Entschuldigung',
+    greeting: 'Liebe Frau Meinert',
+    closing: 'Liebe Grüße',
+    closingName: 'Vorname',
+    content: 'ich schreibe Ihnen, weil ich diese Woche nicht mehr in den Kurs kommen kann. Mein Mann ist sehr krank. Er hat starke Magenschmerzen und hohes Fieber. Ich kümmere mich um ihn. [Bitte entschuldigen Sie mein Fehlen / Es tut mir leid, dass ich diese Woche nicht mehr kommen kann]. Ich würde gern die Hausaufgaben machen. Ich hätte eine Frage: Könnten Sie mir die Hausaufgaben per WhatsApp schicken? Ich lerne gern und möchte auch ein bisschen zu Hause üben. Wenn es meinem Mann wieder geht, komme ich nächste Woche wieder in den Kurs.<br/>Ich bedanke mich für Ihr Verständnis.',
+  },
+  {
+    type: 'Einladung',
+    title: 'Halb-Formell | Einladung',
+    subject: 'Antwort auf Einladung',
+    greeting: 'Liebe Frau Berg',
+    closing: 'Liebe Grüße',
+    closingName: 'Vorname',
+    content: 'ich Schreibe Ihnen, weil ich eine Einladung zu Ihrer Geburtstagsparty bekommen habe. Das freut mich sehr. Ich komme gern zu Ihrer Party. Zurzeit besuche ich den B2-Kurs und danach möchte ich eine Ausbildung als Krankenschwester machen. Am Wochenende habe ich Zeit, um zu Ihrem Geburtstag zu kommen. Ich weiß leider nicht, wo Sie wohnen. Könnten Sie mir bitte Ihre Adresse per Whatsapp schreiben? Mit welchen Verkehrsmittel komma am besten zu Ihnen?<br/>Ich warte auf Ihre Antwort und freue mich auf den Geburtstag.',
+  },
 ];
 
 const BriefSchreiben = () => {
@@ -163,7 +181,7 @@ const BriefSchreiben = () => {
         badgeStyle = 'bg-primary';
         break;
 
-      case 'Krankmelden':
+      case 'Entschuldigung':
         badgeStyle = 'bg-success';
         break;
 
@@ -268,8 +286,8 @@ const BriefSchreiben = () => {
                     onClick={() => setSelectedType("")}>Alles</button>
             <button type="button" className={`btn mx-2 btn-sm btn-outline-primary ${selectedType === 'Einladung' ? 'active': ''}`}
                     onClick={() => setSelectedType("Einladung")}>Einladung</button>
-            <button type="button" className={`btn mx-2 btn-sm btn-outline-success ${selectedType === 'Krankmelden' ? 'active': ''}`}
-                    onClick={() => setSelectedType("Krankmelden")}>Krankmelden</button>
+            <button type="button" className={`btn mx-2 btn-sm btn-outline-success ${selectedType === 'Entschuldigung' ? 'active': ''}`}
+                    onClick={() => setSelectedType("Entschuldigung")}>Entschuldigung</button>
             <button type="button" className={`btn mx-2 btn-sm btn-outline-info ${selectedType === 'Reklamation' ? 'active': ''}`}
                     onClick={() => setSelectedType("Reklamation")}>Reklamation</button>
             <button type="button" className={`btn mx-2 btn-sm btn-outline-warning ${selectedType === 'Bewerbung' ? 'active': ''}`}
