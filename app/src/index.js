@@ -27,6 +27,7 @@ import Als from "./routes/Als";
 import Passiv from "./routes/Passiv";
 import Lesen from "./routes/Lesen";
 import Preposition from "./routes/Preposition";
+import Zu from "./routes/Zu";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -52,6 +53,7 @@ ReactDOM.render(
             <Route path="passiv" element={<Passiv/>}/>
             <Route path="lesen" element={<Lesen/>}/>
             <Route path="prepositions" element={<Preposition/>}/>
+            <Route path="zu" element={<Zu/>}/>
           </Route>
         </Routes>
       </BrowserRouter>

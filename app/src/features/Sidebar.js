@@ -15,6 +15,7 @@ const grammarRoutes = [
   {path:'/konjunktionen', linkText: 'Weil, Deshalb, Trotzdem, Ob, Dass, Obwohl'},
   {path:'/konjunktiv-ii', linkText: 'Konjunktiv II (Wünsche)'},
   {path:'/prepositions', linkText: 'Präpositionen'},
+  {path:'/zu', linkText: 'Zu'},
   {path:'/passiv', linkText: 'Passiv'},
   {path:'/als', linkText: 'Als'},
   // {path:'/indirekt-fragen', linkText: 'Indirekt Fragen Und Ob'},
