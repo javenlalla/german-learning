@@ -11,7 +11,7 @@ const Sample = () => {
       <Section>
 
         <SubSection header="Sample Sub-section">
-          <div className="table-responsive text-nowrap">
+          <div className="table-responsive">
             <table className="table">
               <thead>
               <tr>

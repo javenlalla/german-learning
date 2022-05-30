@@ -26,6 +26,7 @@ import ModalVerben from "./routes/ModalVerben";
 import Als from "./routes/Als";
 import Passiv from "./routes/Passiv";
 import Lesen from "./routes/Lesen";
+import Preposition from "./routes/Preposition";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -50,6 +51,7 @@ ReactDOM.render(
             <Route path="als" element={<Als/>}/>
             <Route path="passiv" element={<Passiv/>}/>
             <Route path="lesen" element={<Lesen/>}/>
+            <Route path="prepositions" element={<Preposition/>}/>
           </Route>
         </Routes>
       </BrowserRouter>
