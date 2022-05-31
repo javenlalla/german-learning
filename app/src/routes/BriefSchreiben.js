@@ -47,7 +47,7 @@ const letters = [
     type: 'Einladung',
     title: 'Formell | Einladung (Absagen)',
     subject: 'Weihnachtsfeier',
-    greeting: 'Sehr geehrte Herr Hans',
+    greeting: 'Sehr geehrter Herr Hans',
     closing: 'Mit freundlichen Grüßen',
     closingName: 'Name',
     content: 'ich schreibe Ihnen, weil ich nicht am Freitagabend an der Weihnachtsfeier teilnehmen kann. Vielen Dank für die Einladung. Am Freitagabend haben meine ihr Weihnachtskonzert in der Schule. Sie singen im Konzert und ich möchte zuhören. Ich hoffe, dass die Feier toll ist.<br/>Ich wünsche Ihnen Frohe Weihnachten.',
@@ -148,9 +148,28 @@ const letters = [
     title: 'Halb-Formell | Einladung',
     subject: 'Antwort auf Einladung',
     greeting: 'Liebe Frau Berg',
-    closing: 'Liebe Grüße',
+    closing: 'Viele Grüße',
     closingName: 'Vorname',
-    content: 'ich Schreibe Ihnen, weil ich eine Einladung zu Ihrer Geburtstagsparty bekommen habe. Das freut mich sehr. Ich komme gern zu Ihrer Party. Zurzeit besuche ich den B2-Kurs und danach möchte ich eine Ausbildung als Krankenschwester machen. Am Wochenende habe ich Zeit, um zu Ihrem Geburtstag zu kommen. Ich weiß leider nicht, wo Sie wohnen. Könnten Sie mir bitte Ihre Adresse per Whatsapp schreiben? Mit welchen Verkehrsmittel komma am besten zu Ihnen?<br/>Ich warte auf Ihre Antwort und freue mich auf den Geburtstag.',
+    content: 'ich Schreibe Ihnen, weil ich eine Einladung zu Ihrer Geburtstagsparty bekommen habe. Das freut mich sehr. Ich komme gern zu Ihrer Party. Zurzeit besuche ich den B2-Kurs und danach möchte ich eine Ausbildung als Krankenschwester machen. Am Wochenende habe ich Zeit, um zu Ihrem Geburtstag zu kommen. Ich weiß leider nicht, wo Sie wohnen. Könnten Sie mir bitte Ihre Adresse per Whatsapp schreiben? Mit welche Verkehrsmittel komme am besten zu Ihnen?<br/>Ich warte auf Ihre Antwort und freue mich auf den Geburtstag.',
+  },
+  {
+    type: 'Beschwerde',
+    title: 'Kaputt Heizung',
+    subject: 'Beschwerde (über kaputte Heizung)',
+    greeting: 'Sehr geehrte Frau Weber',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'ich schreibe Ihnen, weil ich seit drei Tagen ein großes Problem mit meiner Heizung habe. Ich habe Sie mehrmals angerufen, aber nicht erreicht. Deshalb Schreibe ich Ihnen diesen Brief. Leider funktioniert die Heizung nicht. Das Thermostat ist ausgefallen. Ich kann die Heizung nicht mehr einschalten. Meine Kinder sind krank. Sie haben Fieber und eine starke Erkältung, weil es seit dem Problem in der Wohnung sehr kalt ist. Ich bitte Sie, die Heizung so schnell wie möglich zu reparieren oder einen Handwerker zu schicken / Können Sie bitte die Heizung innerhalb der nächsten Tage reparieren? Ich bin nachmittags ab 16 Uhr zu Hause erreichbar. Sie können mich am besten unter der Handynummer: 015342892 erreichen.<br/><br/>Vielen Dank im Voraus.',
+  },
+
+  {
+    type: 'Wohnungsanzeige',
+    title: 'Größer Wohnung',
+    subject: 'Wohnungsanzeige',
+    greeting: 'Sehr geehrter Herr Schmidt',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'ich habe Ihre Wohnungsanzeige in der Tageszeitung gelesen und ich interessiere mich für die Wohnung. Mein name of Vorname Nachname. Ich bin verheiratet und habe zwei Kinder. Seit fünf Jahren lebe ich in Deutschland. Von Beruf bin ich Buchhalterin. Ich habe keine Tiere und bin Nichtraucherin. Momentan leben wir in einer kleinen Wohnung. Ich bekomme noch ein Baby und deshalb brauchen wir eine größere Wohnung. Ich hätte noch ein paar Fragen zur Wohnung: Hat die Wohnung einen Balkon? Gehört zu der Wohnung eine Garage oder Stellplatz? In welchem Stockwerk ist die Wohnung? Ich würde gern einen Besichtigungstermin vereinbaren. Ich habe immer am Nachmittag ab 16 Uhr Zeit, weil ich bis 15 Uhr arbeiten muss. Wann könnten wir einen Termin vereinbaren?<br/>Ab wann ist die Wohnung frei? Ich könnte zum 01.07 in die neue Wohnung einziehen. Sie erreichen mich am besten unter folgender Handynummer: 0153247156.<br/><br/>Ich freue mich auf Ihre Rückmeldung.',
   },
 ];
 
@@ -163,11 +182,7 @@ const BriefSchreiben = () => {
     if (selectedType.length > 0) {
 
       updatedFilteredLetters = letters.filter(letter => {
-        if (letter.type === selectedType) {
-          return true;
-        }
-
-        return false;
+        return letter.type === selectedType;
       })
     }
 

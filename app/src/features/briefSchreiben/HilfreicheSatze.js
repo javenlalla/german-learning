@@ -117,7 +117,7 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            <span className="badge bg-info">Reklamation</span> Wenn ich bis zum 12.06 nicht von Ihnen höre, dann nehme ich die Bestellung zurück und ich möchte mein Geld zurückhaben.<br/>
+            <span className="badge bg-info">Reklamation</span> Wenn ich bis zum [12.06] nicht von Ihnen höre, dann nehme ich die Bestellung zurück und ich möchte mein Geld zurückhaben.<br/>
             <span className="badge bg-info">Reklamation</span> Ich möchte Sie zum letzten Mal auffordern, mit bis [...] (z.B: 12.06) einen Ersatz zu schicken.<br/>
             <span className="badge bg-info">Reklamation</span> Über eine schnelle Bearbeitung würde ich mich sehr freuen.<br/>
           </td>
@@ -133,6 +133,10 @@ const HilfreicheSatze = () => {
           <td>
             <span className="badge bg-danger">Beschwerde</span> Ich möchte mich über...beschweren.<br/>
             <span className="badge bg-danger">Beschwerde</span> Ich muss Ihnen leider sagen/schreiben, dass...<br/>
+            <span className="badge bg-danger">Beschwerde</span> Ich beschwere mich über...<br/>
+            <span className="badge bg-danger">Beschwerde</span> In dem Haus, in dem ich wohne...<br/>
+            <span className="badge bg-danger">Beschwerde</span> Könnten Sie das Problem beseitigen?<br/>
+            <span className="badge bg-danger">Beschwerde</span> Ich habe Sie [mehrmals] angerufen, aber nicht erreicht.<br/>
           </td>
         </tr>
         </tbody>
