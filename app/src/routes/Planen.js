@@ -247,44 +247,44 @@ const VorschlagTable = () => {
         <td>Ja, das können wir so machen</td>
       </tr>
       <tr>
-        <td/>
+        <td>[Vorschlag]. Was sagst du dazu?</td>
         <td>Also ich weiß nicht, das hört sich nicht so interessant an.</td>
         <td>Also, die Getränke/das Essen/die Musik haben wir jetzt organisiert.</td>
-        <td/>
+        <td>Ich bin dabei.</td>
         <td/>
       </tr>
       <tr>
-        <td/>
+        <td>[Vorschlag]. Wie findest du das?</td>
         <td>Nein, auf keinen Fall.</td>
         <td>Können wir die Kosten teilen?</td>
-        <td>Ich bin dabei.</td>
+        <td>Ich stimme zu.</td>
         <td/>
       </tr>
       <tr>
         <td/>
         <td>Filme mag ich nicht so gern, weil...</td>
         <td>Ich stimme nicht zu, aber...</td>
-        <td>Ich stimme zu.</td>
+        <td/>
         <td/>
       </tr>
       <tr>
         <td/>
         <td>Ich stimme nicht zu, weil...</td>
-        <td/>
+        <td>Mit welchen Verkehrsmittel wollen wir fahren?</td>
         <td/>
         <td/>
       </tr>
       <tr>
         <td/>
         <td>Ich bin nicht dabei, weil...</td>
-        <td/>
+        <td>Mit was wollen wir fahren?</td>
         <td/>
         <td/>
       </tr>
       <tr>
         <td/>
         <td>Das Thema interessiert mich nicht.</td>
-        <td/>
+        <td>Wie wäre es, wenn wir mit dem Zug fahren?</td>
         <td/>
         <td/>
       </tr>
