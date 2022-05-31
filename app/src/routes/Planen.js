@@ -97,18 +97,18 @@ const Planen = () => {
             <h3 id="beispiel-1">Beispiel Gespräch 1</h3>
             <p className="text-primary"><span className="fw-bold">Julian:</span> Hallo, wie geht es dir?</p>
             <p className="text-danger"><span className="fw-bold">Heidi</span>: Hallo, mir geht es gut danke und dir?</p>
-            <p className="text-primary"><span className="fw-bold">J:</span> Gut, danke. Ich habe eine gute Idee. Wollen wir am Wochenende nach Pray fahren?</p>
+            <p className="text-primary"><span className="fw-bold">J:</span> Gut, danke. Ich habe eine gute Idee. Wollen wir am Wochenende nach Prag fahren?</p>
             <p className="text-danger"><span className="fw-bold">H:</span> Ja, das ist eine gute Idee. Aber ich habe Freitag beider keine Zeit. Vielleicht passt dir Samstag besser?</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Ja, das passt. Am Samstag habe ich Zeit. Wir könnten mit dem Zug oder mit dem Auto fahren</p>
-            <p className="text-danger"><span className="fw-bold">H:</span> A Mit dem Zug habe ich Angst, aber mit dem Auto passt mir das besser. Wir könnten mit meinem Auto fahren.</p>
+            <p className="text-danger"><span className="fw-bold">H:</span> Mit dem Zug habe ich Angst, aber mit dem Auto passt mir das besser. Wir könnten mit meinem Auto fahren.</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Ok. Super Idee! Also, können min so mehr von der Stadt sehen.</p>
             <p className="text-danger"><span className="fw-bold">H:</span> Wollen wir die Stadt ansehen? Dort gibt es viele Sehenswürdigkeiten. Wir könnten sie besichtigen.</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Das klingt gut. Ich habe noch eine Idee. Wir könnten auch eine Schifffahrt machen. Prag ist eine schöne Stadt. Hast du Lust?</p>
             <p className="text-danger"><span className="fw-bold">H:</span> Ja, darauf habe ich Lust. Das gefällt mir gut!</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Weißt du, wo wir übernachten können?</p>
-            <p className="text-danger"><span className="fw-bold">H:</span> Wir könnten in einer Pension übernachten, was the weil sie billiger ist und weil wir zwei Tage bleiben. Was hältst du davon?</p>
+            <p className="text-danger"><span className="fw-bold">H:</span> Wir könnten in einer Pension übernachten, weil sie billiger ist und weil wir zwei Tage bleiben. Was hältst du davon?</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Das ist ein guter Vorschlag. Ich suche im Internet nach einem Angebot.</p>
-            <p className="text-danger"><span className="fw-bold">H:</span> Vielen Dank. Ich marte auf deine Antwort. Dann, bis Samstag!</p>
+            <p className="text-danger"><span className="fw-bold">H:</span> Vielen Dank. Ich warte auf deine Antwort. Dann, bis Samstag!</p>
             <p className="text-primary"><span className="fw-bold">J:</span> Bis Samstag! Tschüs!</p>
           </div>
 
