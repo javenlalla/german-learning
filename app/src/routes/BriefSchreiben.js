@@ -161,7 +161,6 @@ const letters = [
     closingName: 'Vorname Nachname',
     content: 'ich schreibe Ihnen, weil ich seit drei Tagen ein großes Problem mit meiner Heizung habe. Ich habe Sie mehrmals angerufen, aber nicht erreicht. Deshalb Schreibe ich Ihnen diesen Brief. Leider funktioniert die Heizung nicht. Das Thermostat ist ausgefallen. Ich kann die Heizung nicht mehr einschalten. Meine Kinder sind krank. Sie haben Fieber und eine starke Erkältung, weil es seit dem Problem in der Wohnung sehr kalt ist. Ich bitte Sie, die Heizung so schnell wie möglich zu reparieren oder einen Handwerker zu schicken / Können Sie bitte die Heizung innerhalb der nächsten Tage reparieren? Ich bin nachmittags ab 16 Uhr zu Hause erreichbar. Sie können mich am besten unter der Handynummer: 015342892 erreichen.<br/><br/>Vielen Dank im Voraus.',
   },
-
   {
     type: 'Wohnungsanzeige',
     title: 'Größer Wohnung',
@@ -170,6 +169,15 @@ const letters = [
     closing: 'Mit freundlichen Grüßen',
     closingName: 'Vorname Nachname',
     content: 'ich habe Ihre Wohnungsanzeige in der Tageszeitung gelesen und ich interessiere mich für die Wohnung. Mein name of Vorname Nachname. Ich bin verheiratet und habe zwei Kinder. Seit fünf Jahren lebe ich in Deutschland. Von Beruf bin ich Buchhalterin. Ich habe keine Tiere und bin Nichtraucherin. Momentan leben wir in einer kleinen Wohnung. Ich bekomme noch ein Baby und deshalb brauchen wir eine größere Wohnung. Ich hätte noch ein paar Fragen zur Wohnung: Hat die Wohnung einen Balkon? Gehört zu der Wohnung eine Garage oder Stellplatz? In welchem Stockwerk ist die Wohnung? Ich würde gern einen Besichtigungstermin vereinbaren. Ich habe immer am Nachmittag ab 16 Uhr Zeit, weil ich bis 15 Uhr arbeiten muss. Wann könnten wir einen Termin vereinbaren?<br/>Ab wann ist die Wohnung frei? Ich könnte zum 01.07 in die neue Wohnung einziehen. Sie erreichen mich am besten unter folgender Handynummer: 0153247156.<br/><br/>Ich freue mich auf Ihre Rückmeldung.',
+  },
+  {
+    type: 'Beschwerde',
+    title: 'Telefon Und Internet',
+    subject: 'Beschwerde',
+    greeting: 'Sehr geehrte Damen und Herren',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'ich schreibe Ihnen, weil ich seit einiger Zeit einen Telefon- und Internetanschluss bei Ihnen habe. Seit zwei Wochen funktionieren mein Telefon und Internet nicht mehr gut. Ich kann nur auf dem Balkon telefonieren. Ich schlage vor, dass Ihr Techniker meinen Anschluss überprüft und das Problem beseitigt. Wenn Sie keine Lösung finden, dann muss ich leider meinen Vertrag kündigen. Ich benutze viel das Internet, weil ich zu Hause arbeite. Vielleicht können Sie mir eine andere Lösung vorschlagen. Ich hoffe, dass wir uns einigen können. Ich bitte Sie, so schnell wie möglich zu antworten.<br/><br/>Ich freue mich auf Ihre baldige Rückmeldung.',
   },
 ];
 
@@ -191,6 +199,7 @@ const BriefSchreiben = () => {
 
   const lettersRender = filteredLetters.map((letter, index) => {
     let badgeStyle = '';
+    let badgeText = letter.type;
     switch (letter.type) {
       case 'Einladung':
         badgeStyle = 'bg-primary';
@@ -214,6 +223,12 @@ const BriefSchreiben = () => {
 
       case 'Beschwerde':
         badgeStyle = 'bg-danger';
+        badgeText = 'Beschwerde'
+        break;
+
+      case 'Kundigung':
+        badgeStyle = 'bg-primary';
+        badgeText = 'Kundigung'
         break;
 
       default:
@@ -223,7 +238,7 @@ const BriefSchreiben = () => {
     badgeStyle = `badge ${badgeStyle}`;
 
     return <div key={index}>
-      <h4><span className={badgeStyle}>{letter.type}</span> {letter.title}</h4>
+      <h4><span className={badgeStyle}>{badgeText}</span> {letter.title}</h4>
       <Brief  subject={letter.subject} greeting={letter.greeting} closing={letter.closing} closingName={letter.closingName} type={letter.type}>
         {letter.content}
       </Brief>
@@ -232,7 +247,11 @@ const BriefSchreiben = () => {
 
   const toc = [
     {
-      name: "Grußformeln",
+      name: "Anrede",
+      link: "anrede",
+    },
+    {
+      name: "Grüß",
       link: "gruss",
     },
     {
@@ -250,7 +269,7 @@ const BriefSchreiben = () => {
       <TableOfContents sections={toc}/>
 
       <Section>
-        <SubSection header="Grußformeln" linkAnchor="gruss">
+        <SubSection header="Anrede" linkAnchor="anrede">
           <div className="table-responsive text-nowrap">
             <table className="table">
               <thead>
@@ -269,13 +288,27 @@ const BriefSchreiben = () => {
                 <td>Sehr geehrte Frau Winter</td>
               </tr>
               <tr>
-                <td>Liebe Julia und Thomas</td>
-                <td>Sehr geehrte Frau Winter und Herr Müller</td>
-              </tr>
-              <tr>
-                <td/>
+                <td>
+                  Liebe Frau Beck
+                  <br/>(Halb-formell. Zum Beispiel: Klassenlehrerin)
+                </td>
                 <td>Sehr geehrte Damen und Herren.</td>
               </tr>
+              </tbody>
+            </table>
+          </div>
+        </SubSection>
+
+        <SubSection header="Gruß" linkAnchor="gruss">
+          <div className="table-responsive text-nowrap">
+            <table className="table">
+              <thead>
+              <tr>
+                <th>Informell</th>
+                <th>Formell</th>
+              </tr>
+              </thead>
+              <tbody>
               <tr>
                 <td>Liebe Grüße</td>
                 <td>Mit freundlichen Grüßen</td>
@@ -311,6 +344,8 @@ const BriefSchreiben = () => {
                     onClick={() => setSelectedType("Wohnungsanzeige")}>Wohnungsanzeige</button>
             <button type="button" className={`btn mx-2 btn-sm btn-outline-danger ${selectedType === 'Beschwerde' ? 'active': ''}`}
                     onClick={() => setSelectedType("Beschwerde")}>Beschwerde</button>
+            {/*<button type="button" className={`btn mx-2 btn-sm btn-outline-primary ${selectedType === 'Kundigung' ? 'active': ''}`}*/}
+            {/*        onClick={() => setSelectedType("Kündigung")}>Kündigung</button>*/}
           </div>
 
           {lettersRender}

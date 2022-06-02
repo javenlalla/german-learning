@@ -17,6 +17,7 @@ const HilfreicheSatze = () => {
           <td>
             Ich schreibe Ihnen, weil...<br/>
             Ich schreibe dir, weil...<br/>
+            Ich möchte [Ihnen/dir] mitteilen, dass.... Deshalb schreibe ich [Ihnen/dir] [diese E-Mail/diesen Brief].
           </td>
         </tr>
         <tr>
@@ -53,10 +54,18 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Vielen Dank für dein Verständnis.<br/>
-            Vielen Dank für Ihr Verständnis.<br/>
-            Vielen Dank für euer Verständnis.<br/>
-            Ich bedanke mich für Ihr Verständnis.<br/>
+            Ich bitte Sie, [die Handwerker in meine Wohnung zu lassen].<br/>
+            Könnten Sie bitte [die Handwerker in meine Wohnung lassen]?<br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Vielen Dank für [Ihr/dein] Verständnis.<br/>
+            Vielen Dank für [Ihre/deine] Hilfe.<br/>
+            Vielen Dank für [Ihre/deine] Mühe.<br/>
+            Vielen Dank im Voraus.<br/>
+            Ich bedanke mich für [Ihr/dein] Verständnis.<br/>
+            Ich danke [Ihnen/dir].<br/>
           </td>
         </tr>
         <tr>
@@ -65,6 +74,9 @@ const HilfreicheSatze = () => {
             Ich warte auf deine Antwort.<br/>
             Ich freue mich auf eine Antwort.<br/>
             Ich würde mich über eine Antwort freuen.<br/>
+            Ich freue mich auf Ihre baldige Rückmeldung.<br/>
+            Ich bitte Sie, mir so schnell wie möglich zu antworten.<br/>
+            Ich bitte, um eine Rückantwort.<br/>
           </td>
         </tr>
         <tr>
@@ -91,10 +103,12 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Sie können mich unter der E-Mail-Adresse meine@email.com erreichen.<br/>
-            Am besten erreichen Sie mich unter folgenden Telefonnummer: [0174 123-4567].<br/>
-            Sie können mich unter der E-Mail-Adresse [meine@email.com] erreichen.<br/>
-            Ich bin unter der Handynummer erreichbar: [0174-123-4567].<br/>
+            Am besten [können Sie/kannst du] mich unter folgender Handynummer: [0176-543210] erreichen.
+            Ich bin unter der Handynummer: [0174-123-4567] erreichbar.<br/>
+            Am besten [erreichen Sie/erreichst du] mich unter folgender Handynummer: [0174 123-4567].<br/>
+            Sie können mich unter der E-Mail [meine@email.com] erreichen.<br/>
+            Sie können mich unter der E-Mail [meine@email.com] erreichen.<br/>
+            Sie können mich entweder unter der Nummer: [0176-543210] oder unter der E-Mail: [meine@email.com] erreichbar.<br/>
           </td>
         </tr>
         <tr>
@@ -137,6 +151,14 @@ const HilfreicheSatze = () => {
             <span className="badge bg-danger">Beschwerde</span> In dem Haus, in dem ich wohne...<br/>
             <span className="badge bg-danger">Beschwerde</span> Könnten Sie das Problem beseitigen?<br/>
             <span className="badge bg-danger">Beschwerde</span> Ich habe Sie [mehrmals] angerufen, aber nicht erreicht.<br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span className="badge bg-primary">Kündigung</span> Ich möchte meinen Vertrag jetzt aber Kündigen.<br/>
+            <span className="badge bg-primary">Kündigung</span> Ich habe seit [zwei Jahren] [einen Handyvertrag] bei Ihnen.<br/>
+            <span className="badge bg-primary">Kündigung</span> Ich habe vor [zwei Jahren] bei Ihnen [ein Handy gekauft/einen Vertrag gemacht].<br/>
+            <span className="badge bg-primary">Kündigung</span> Ich kündige meinen Vertrag zum [01.07.2022].<br/>
           </td>
         </tr>
         </tbody>
