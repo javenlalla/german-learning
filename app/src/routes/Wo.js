@@ -31,9 +31,9 @@ const Wo = () => {
                 <tbody>
                 <tr>
                   <td><span className="text-success fw-bold">der</span></td>
-                  <td>ins Auto</td>
-                  <td>im Auto</td>
-                  <td>aus dem Auto</td>
+                  <td>zum Friseur</td>
+                  <td>beim Friseur</td>
+                  <td>vom Friseur</td>
                 </tr>
                 <tr>
                   <td><span className="text-danger fw-bold">die</span></td>
@@ -43,9 +43,9 @@ const Wo = () => {
                 </tr>
                 <tr>
                   <td><span className="text-info fw-bold">das</span></td>
-                  <td>zum Friseur</td>
-                  <td>beim Friseur</td>
-                  <td>vom Friseur</td>
+                  <td>ins Auto</td>
+                  <td>im Auto</td>
+                  <td>aus dem Auto</td>
                 </tr>
                 </tbody>
               </table>

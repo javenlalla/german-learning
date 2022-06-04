@@ -31,8 +31,8 @@ const Preposition = () => {
       'darauf',
     ],
     an: [
+      'sich erinnern',
       'denken',
-      'erinnern',
       'glauben',
       'Woran denkst du?',
       'An wen denkst du?',
