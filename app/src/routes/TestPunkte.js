@@ -27,14 +27,14 @@ const TestPunkte = () => {
     <Section>
       <SubSection header="Teile" linkAnchor="teile">
         <div>
-          <p><span className="fw-bold">Hören</span>: 4 Teile, 25 Minuten</p>
-          <p><span className="fw-bold">Lesen</span>: 5 Teile, 45 Minuten</p>
-          <p><span className="fw-bold">Schreiben</span>: 1 Brief, 30 Minuten
+          <div><span className="fw-bold">Hören</span>: 4 Teile, 25 Minuten</div>
+          <div><span className="fw-bold">Lesen</span>: 5 Teile, 45 Minuten</div>
+          <div><span className="fw-bold">Schreiben</span>: 1 Brief, 30 Minuten
             <ul>
               <li>Nur 1 von 2 möglichen Aufgaben: Aufgabe A <span className="fst-italic">oder</span> Aufgabe B</li>
             </ul>
-          </p>
-          <p>
+          </div>
+          <div>
             <span className="fw-bold">Sprechen</span>: 3 Teile, ~16 Minuten
             <ul>
               <li>Start: 11:00 Uhr</li>
@@ -46,7 +46,7 @@ const TestPunkte = () => {
                 </ul>
               </li>
             </ul>
-          </p>
+          </div>
 
         </div>
       </SubSection>

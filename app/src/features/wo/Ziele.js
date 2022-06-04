@@ -173,7 +173,7 @@ const Ziele = () => {
   ]
 
   const destinationsRender = destinations.map((destination, i) => {
-    return <tr>
+    return <tr key={i}>
       <td>{destination.wohin}</td>
       <td>{destination.wo}</td>
       <td>{destination.woher}</td>
