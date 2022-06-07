@@ -179,6 +179,16 @@ const letters = [
     closingName: 'Vorname Nachname',
     content: 'ich schreibe Ihnen, weil ich seit einiger Zeit einen Telefon- und Internetanschluss bei Ihnen habe. Seit zwei Wochen funktionieren mein Telefon und Internet nicht mehr gut. Ich kann nur auf dem Balkon telefonieren. Ich schlage vor, dass Ihr Techniker meinen Anschluss überprüft und das Problem beseitigt. Wenn Sie keine Lösung finden, dann muss ich leider meinen Vertrag kündigen. Ich benutze viel das Internet, weil ich zu Hause arbeite. Vielleicht können Sie mir eine andere Lösung vorschlagen. Ich hoffe, dass wir uns einigen können. Ich bitte Sie, so schnell wie möglich zu antworten.<br/><br/>Ich freue mich auf Ihre baldige Rückmeldung.',
   },
+  ,
+  {
+    type: 'Verloren',
+    title: 'Handy',
+    subject: 'Handy verloren',
+    greeting: 'Sehr geehrte Damen und Herren',
+    closing: 'Mit freundlichen Grüßen',
+    closingName: 'Vorname Nachname',
+    content: 'ich schreibe Ihnen, weil ich leider mein Handy verloren habe. Gestern Vormittag um 11 Uhr habe ich im Supermarkt eingekauft. Als ich bezahlen wollte, habe ich mein Handy in der Tasche nicht gefunden. Ich denke, dass ich mein Handy im Supermarkt verloren habe. Das Modell von meinem Handy ist ein Samsung XS7. Es ist schwarz. Meine Handyhülle ist pink und hat Blumen. In meiner Handyhülle befinden sich drei Karten, mein Ausweis, mein Busticket und meine Versichertenkarte. Könnten Sie mir sagen, ob jemand schon mein Handy gefunden hat und im Fundamt abgeben hat? Sie Können mich am besten unter der E-Mail-Adresse: meine@email.com erreichen. Ich warte auf Ihre Antwort.<br/><br/>Vielen Dank im Voraus.',
+  },
 ];
 
 const BriefSchreiben = () => {
@@ -229,6 +239,11 @@ const BriefSchreiben = () => {
       case 'Kundigung':
         badgeStyle = 'bg-primary';
         badgeText = 'Kundigung'
+        break;
+
+      case 'Verloren':
+        badgeStyle = 'bg-success';
+        badgeText = 'Verloren'
         break;
 
       default:
@@ -344,6 +359,8 @@ const BriefSchreiben = () => {
                     onClick={() => setSelectedType("Wohnungsanzeige")}>Wohnungsanzeige</button>
             <button type="button" className={`btn mx-2 btn-sm btn-outline-danger ${selectedType === 'Beschwerde' ? 'active': ''}`}
                     onClick={() => setSelectedType("Beschwerde")}>Beschwerde</button>
+            <button type="button" className={`btn mx-2 btn-sm btn-outline-success ${selectedType === 'Verloren' ? 'active': ''}`}
+                    onClick={() => setSelectedType("Verloren")}>Verloren</button>
             {/*<button type="button" className={`btn mx-2 btn-sm btn-outline-primary ${selectedType === 'Kundigung' ? 'active': ''}`}*/}
             {/*        onClick={() => setSelectedType("Kündigung")}>Kündigung</button>*/}
           </div>
