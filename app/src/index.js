@@ -36,7 +36,7 @@ import Zu from "./routes/Zu";
 const instance = createInstance({
   urlBase: "https://analytics.jlalla.com",
   siteId: 1,
-  linkTracking: false,
+  // linkTracking: false,
   configurations: {
     disableCookies: true,
   }
@@ -48,17 +48,17 @@ function usePageViews() {
 
   // enableLinkTracking();
 
-  // useEffect(() => {
-  //   // console.log("track page view", location.pathname);
-  //   // trackPageView({
-  //   //   documentTitle: 'Page title', // optional
-  //   //   href: "/briefschreiben",
-  //   // });
-  //
-  //   // trackPageView();
-  //
-  //
-  // }, [location]);
+  useEffect(() => {
+    // console.log("track page view", location.pathname);
+    // trackPageView({
+    //   documentTitle: 'Page title', // optional
+    //   href: "/briefschreiben",
+    // });
+
+    trackPageView();
+
+
+  }, [location]);
 
   // useEffect(
   //   () => {
@@ -69,18 +69,18 @@ function usePageViews() {
 }
 
 const Main = () => {
-  // usePageViews();
+  usePageViews();
 
 
-  const { enableLinkTracking, trackPageView } = useMatomo()
-  const location = useLocation()
-
-
-  enableLinkTracking()
-
-  useEffect(() => {
-    trackPageView();
-  }, [location])
+  // const { enableLinkTracking, trackPageView } = useMatomo()
+  // const location = useLocation()
+  //
+  //
+  // enableLinkTracking()
+  //
+  // useEffect(() => {
+  //   trackPageView();
+  // }, [location])
 
   return (
       <Routes>
