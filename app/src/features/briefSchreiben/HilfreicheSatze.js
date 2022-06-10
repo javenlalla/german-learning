@@ -15,9 +15,8 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Ich schreibe Ihnen, weil...<br/>
-            Ich schreibe dir, weil...<br/>
-            Ich möchte [Ihnen/dir] mitteilen, dass.... Deshalb schreibe ich [Ihnen/dir] [diese E-Mail/diesen Brief].
+            Ich schreibe [Ihnen/dir], weil...<br/>
+            Ich möchte [Ihnen/dir] mitteilen, dass.... Deshalb schreibe ich [Ihnen/dir] [diese E-Mail/diesen Brief].<br/>
           </td>
         </tr>
         <tr>
@@ -32,7 +31,7 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Ich komme gern zu [Ihrer/deine] Party.<br/>
+            Ich komme gern zu [Ihrer/deiner] Party.<br/>
             Ich würde gern zu deiner Party kommen.<br/>
             Tut mir leid, aber ich kann leider nicht kommen.<br/>
             Ich würde gern zu deiner Party kommen, aber...<br/>
@@ -42,12 +41,12 @@ const HilfreicheSatze = () => {
           <td>
             Ich habe eine Frage.<br/>
             Ich hätte eine Frage.<br/>
-            Ich habe ein Vorschlag.<br/>
+            Ich habe einen Vorschlag.<br/>
           </td>
         </tr>
         <tr>
           <td>
-            Kannst du mir/Könnten Sie mir bitte...?<br/>
+            [Kannst du mir/Könnten Sie] mir bitte...?<br/>
             Könnten Sie mir helfen?<br/>
             Ich wollte Sie etwas fragen.<br/>
           </td>
@@ -81,8 +80,7 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Ich wünsche dir...<br/>
-            Ich wünsche Ihnen...<br/>
+            Ich wünsche [Ihnen/dir]...<br/>
             Ich wünsche dir alles Gute zum Geburtstag.<br/>
             Ich wünsche euch eine tolle Party und viel Spaß.<br/>
           </td>
@@ -103,10 +101,9 @@ const HilfreicheSatze = () => {
         </tr>
         <tr>
           <td>
-            Am besten [können Sie/kannst du] mich unter folgender Handynummer: [0176-543210] erreichen.
+            Am besten [können Sie/kannst du] mich unter folgender Handynummer: [0176-543210] erreichen.<br/>
             Ich bin unter der Handynummer: [0174-123-4567] erreichbar.<br/>
             Am besten [erreichen Sie/erreichst du] mich unter folgender Handynummer: [0174 123-4567].<br/>
-            Sie können mich unter der E-Mail [meine@email.com] erreichen.<br/>
             Sie können mich unter der E-Mail [meine@email.com] erreichen.<br/>
             Sie können mich entweder unter der Nummer: [0176-543210] oder unter der E-Mail: [meine@email.com] erreichbar.<br/>
           </td>
